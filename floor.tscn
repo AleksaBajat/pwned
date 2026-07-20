@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://buxinls34il40"]
+
+[ext_resource type="Texture2D" uid="uid://dpsiyjlk006r7" path="res://textures/1920x1080-black-solid-color-background.jpg" id="1_oj3tl"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=778908277]
+z_index = -10
+texture = ExtResource("1_oj3tl")

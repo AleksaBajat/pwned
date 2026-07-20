@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://gmp07fxrexle"]
+
+[ext_resource type="PackedScene" uid="uid://dgirs4r5fk7w4" path="res://player.tscn" id="1_player"]
+[ext_resource type="PackedScene" uid="uid://buxinls34il40" path="res://floor.tscn" id="2_e2o6t"]
+
+[node name="Game" type="Node2D" unique_id=1416125198]
+
+[node name="Label" type="Label" parent="." unique_id=1554064932]
+offset_left = 26.0
+offset_top = 40.0
+offset_right = 1127.0
+offset_bottom = 63.0
+text = "Rawr"
+
+[node name="Sprite2D" parent="." unique_id=778908277 instance=ExtResource("2_e2o6t")]
+position = Vector2(594, 383)
+
+[node name="Player" parent="." unique_id=1657851287 instance=ExtResource("1_player")]
+position = Vector2(601, 312)
