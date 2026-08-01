@@ -7,6 +7,7 @@ public partial class Player : CharacterBody2D
 	[Export] public float DashSpeed = 1500.0f;
 	[Export] public float DashCooldown = 0.6f;
 	[Export] public float DashDuration = 0.15f;
+	[Signal] public delegate void DashedEventHandler(Vector2 direction);
 
 	private float _dashTimeLeft = 0f;
 	private float _cooldownLeft = 0f;
@@ -31,6 +32,7 @@ public partial class Player : CharacterBody2D
 				_dashTimeLeft = DashDuration;
 				_cooldownLeft = DashCooldown;
 				velocity = _dashDirection * DashSpeed;
+				EmitSignal(SignalName.Dashed, _dashDirection);
 			}
 			else
 			{
