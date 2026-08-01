@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WeaponDefinition" format=3 uid="uid://pkgx1tr1ev8k"]
+
+[ext_resource type="Script" uid="uid://11hhxclvrpi7" path="res://inventory/WeaponDefinition.cs" id="1_gtbr5"]
+[ext_resource type="Resource" uid="uid://c0gt75hxe2swh" path="res://inventory/stats/StatDefDamage.tres" id="1_wddyc"]
+[ext_resource type="Script" uid="uid://d6ye68b7v0w7" path="res://inventory/StatModifier.cs" id="2_aw6n6"]
+
+[sub_resource type="Resource" id="Resource_k6rc6"]
+script = ExtResource("2_aw6n6")
+Stat = ExtResource("1_wddyc")
+Value = 3.0
+metadata/_custom_type_script = "uid://d6ye68b7v0w7"
+
+[resource]
+script = ExtResource("1_gtbr5")
+Modifiers = [SubResource("Resource_k6rc6")]
+DisplayName = "Wooden Sword"
+metadata/_custom_type_script = "uid://11hhxclvrpi7"

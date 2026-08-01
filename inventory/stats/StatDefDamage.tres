@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StatDefinition" format=3 uid="uid://c0gt75hxe2swh"]
+
+[ext_resource type="Script" uid="uid://0hjghh3buql1" path="res://inventory/StatDefinition.cs" id="1_54wtu"]
+
+[resource]
+script = ExtResource("1_54wtu")
+DisplayName = "Damage"
+DefaultValue = 1.0
+metadata/_custom_type_script = "uid://0hjghh3buql1"
